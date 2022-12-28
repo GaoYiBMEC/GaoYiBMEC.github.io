@@ -1,0 +1,79 @@
+﻿
+::-webkit-scrollbar {
+    width: 0px;
+    background-color: black;
+}
+
+body, div, button, input, optgroup, select, textarea, a, label, li, ul, h1, h2, h3, h4, h5, h6 {
+    font-family: proxima-nova,Proxima-Nova-Fallback,Helvetica,sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #586d80;
+}
+
+header {
+    background-image: url('../Libs/Images/navbar_Background.png');
+    background-size: cover;
+    background-position-y: bottom;
+    background-position-x: left;
+    height: 90vh;
+}
+
+    header #headerTitle {
+        background: #f8f6f561;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+    }
+
+        header #headerTitle.bkWhite {
+            background: #f8f6f5e0;
+        }
+
+        header #headerTitle .navbar-brand h2 {
+            display: inline-block;
+            vertical-align: sub;
+            font-weight: bold;
+        }
+
+    /* 三條線按鈕 */
+    header .navbar-toggler {
+        border: none;
+    }
+
+        header .navbar-toggler .navbar-toggler-icon {
+            width: 1em;
+            height: 1em;
+        }
+
+    header button:focus:not(:focus-visible) {
+        box-shadow: none;
+    }
+
+    /* 選單 */
+    header .nav-link {
+        color: #0008;
+        font-weight: bolder;
+    }
+
+        header .nav-link:focus,
+        header .nav-link:hover {
+            color: #000;
+            font-weight: bolder;
+        }
+
+    /* 關閉按鈕 */
+    header .btn-close {
+        width: 2.3em;
+    }
+
+
+@media (max-width: 768px) {
+    header {
+        height: 40vh;
+    }
+}
