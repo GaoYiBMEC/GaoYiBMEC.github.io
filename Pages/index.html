@@ -92,6 +92,15 @@
             _carousel.addEventListener('slid.bs.carousel', function (a) {
                 controlClick(a.relatedTarget);
             });
+
+            //選單事件
+            const _offcanvasNavbar = document.getElementById('offcanvasNavbar');
+            const _navLink = _offcanvasNavbar.getElementsByClassName('nav-link');
+            $.each(_navLink, function (key, value) {
+                value.addEventListener('click', function () {
+                    $('#offcanvasNavbar').offcanvas('hide');
+                });
+            });
         });
 
         const getImgList = function () {
