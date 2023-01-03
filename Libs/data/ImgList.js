@@ -38,7 +38,7 @@ window.ImgType = [
     {
         "ID": "RY8108",
         "Name": "RY8108",
-        "Description": ""
+        "Description": "   "
     },
 ];
 window.ImgList = [
