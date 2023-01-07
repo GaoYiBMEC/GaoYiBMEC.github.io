@@ -71,5 +71,10 @@ window.ImgList = [
         "ImgType": "RY8107",
         "ImgPath": "../Libs/Images/RY/RY8107/RY8107 (3).jpg",
         "ImgName": "RY8107 (3).jpg"
+    },
+    {
+        "ImgType": "RY8101",
+        "ImgPath": "../Libs/Images/RY/RY8101/RY8101_1.jpg",
+        "ImgName": "RY8101_1"
     }
 ];
