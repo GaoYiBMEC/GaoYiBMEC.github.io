@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="utf-8" />
     <meta name="keywords" content="高藝建材工程有限公司, Gao Yi, 高藝, 建材, 高藝建材, 卡扣地板, 地板, Spc">
@@ -7,197 +7,357 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>高藝建材工程有限公司</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link href="../Libs/Site.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="../Libs/data/ImgList.js"></script>
-    <script src="../Libs/Site.js"></script>
+
     <style>
-        #offcanvasNavbar{
-            max-width: 80%;   
-        }
-        
-        #gaoyiDescription img {
-            width: 100px;
-            height: 100px;
+        body {
+            min-width: 350px;
         }
 
-        #gaoyiDescription .card-title {
-            font-weight: bold;
+        header {
+            margin-bottom: -100px;
         }
 
-        #gaoyiDescription .card-text ul,
-        #gaoyiDescription .card-text ul li {
-            list-style: none;
-            text-align: center;
-            padding: 0;
-            color: #1119;
-            font-weight: bold;
+        #gaoyiHeader {
+            background: #004831;
+            color: #fff;
+            overflow: hidden;
+            margin-bottom: -150px;
+            position: relative;
+            z-index: 1;
+            padding-top: 40px;
         }
 
-        #gaoyiImgs {
-            text-align: center;
-        }
+            #gaoyiHeader #gaoyiTop {
+                background: #004831;
+                position: fixed;
+                width: 100vw;
+                top: 0;
+            }
 
-            #gaoyiImgs .imgBorder {
-                width: 200px;
-                height: 200px;
-                overflow: hidden;
-                border-radius: 5px;
-                padding: 0;
-                margin: .5rem;
+            #gaoyiHeader #gaoyiTitle {
+                letter-spacing: 8px;
+                font-size: .5rem;
+                padding: 4px 10px 4px 17px;
+                border-radius: 15px;
+                background: #fff4;
+            }
+
+            #gaoyiHeader .gaoyiIcon {
+                border-radius: 20px;
+                border: 1px solid #fff;
+                margin: 5px;
+                padding: 8px;
                 text-align: center;
                 cursor: pointer;
-                display: inline-block;
+                font-size: .5rem;
+                background: #004831;
             }
 
-                #gaoyiImgs .imgBorder img {
-                    max-width: 200px;
-                    height: 200px;
-                    object-fit: cover;
-                    transition: .5s;
+                #gaoyiHeader .gaoyiIcon a {
+                    text-decoration: none;
+                    color: #fff;
                 }
 
-                    #gaoyiImgs .imgBorder img:hover {
-                        transform: scale(1.2);
+                    #gaoyiHeader .gaoyiIcon a i.bi-geo-alt-fill {
+                        margin-right: -2px;
+                        margin-left: 2px;
                     }
 
-        .modal button,
-        .modal button:active {
-            border: none;
+                #gaoyiHeader .gaoyiIcon:hover {
+                    border: 1px solid #fff;
+                    background: #fff;
+                }
+
+                    #gaoyiHeader .gaoyiIcon:hover a {
+                        color: #004831;
+                    }
+
+        #gaoyiSvg {
+            position: relative;
+            z-index: -1;
         }
 
-        @media (max-width: 768px) {
-            .imgLine {
-                display: contents;
+        #gaoyiCard img {
+            width: 50%;
+        }
+
+        #gaoyiImgLists .gaoyiImg {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 5px;
+            padding: 0;
+            margin: .5rem;
+            text-align: center;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+            #gaoyiImgLists .gaoyiImg img {
+                max-width: 200px;
+                height: 200px;
+                object-fit: cover;
+                transition: .5s;
             }
 
-            #gaoyiImgs .imgBorder {
-                width: 100px;
-                height: 100px;
+                #gaoyiImgLists .gaoyiImg img:hover {
+                    transform: scale(1.2);
+                }
+
+        footer {
+            background: #004831;
+            color: #fff;
+        }
+
+        @media (max-width:1200px) {
+            #gaoyiHeader {
+                margin-bottom: -140px;
             }
 
-                #gaoyiImgs .imgBorder img {
-                    max-width: 100px;
-                    height: 100px;
+            header {
+                margin-bottom: -90px;
+            }
+        }
+
+        @media (max-width:992px) {
+            #gaoyiHeader {
+                margin-bottom: -120px;
+            }
+
+            header {
+                margin-bottom: -70px;
+            }
+        }
+
+        @media (max-width:886px) {
+            #gaoyiHeader {
+                margin-bottom: -110px;
+            }
+
+            header {
+                margin-bottom: -60px;
+            }
+        }
+
+        @media (max-width:768px) {
+            #gaoyiHeader {
+                margin-bottom: -80px;
+            }
+
+            header {
+                margin-bottom: -50px;
+            }
+
+            #gaoyiImgLists .gaoyiImg {
+                width: 155px;
+                height: 155px;
+            }
+
+                #gaoyiImgLists .gaoyiImg img {
+                    max-width: 155px;
+                    height: 155px;
+                }
+        }
+
+        @media (max-width:576px) {
+            #gaoyiHeader {
+                margin-bottom: -45px;
+            }
+
+            header {
+                margin-bottom: -20px;
+            }
+
+            #gaoyiImgs .imgBorder img {
+                width: 145px;
+                height: 145px;
+            }
+
+            #gaoyiImgLists .gaoyiImg {
+                width: 145px;
+                height: 145px;
+            }
+
+                #gaoyiImgLists .gaoyiImg img {
+                    max-width: 145px;
+                    height: 145px;
                 }
         }
     </style>
+
     <script>
         $(function () {
-            getImgList();
+            resetImgList();
+            getGaoyiAlbumList();
+            AOS.init();
 
             //相簿事件
             const _carousel = document.getElementById('carousel');
             _carousel.addEventListener('slid.bs.carousel', function (a) {
                 controlClick(a.relatedTarget);
             });
-
-            //選單事件
-            const _offcanvasNavbar = document.getElementById('offcanvasNavbar');
-            const _navLink = _offcanvasNavbar.getElementsByClassName('nav-link');
-            $.each(_navLink, function (key, value) {
-                value.addEventListener('click', function () {
-                    $('#offcanvasNavbar').offcanvas('hide');
-                });
-            });
         });
 
-        const getImgList = function () {
-            const _showImg = $('#showImg');
-            const _gaoyiCarousel = $('#gaoyiCarousel');
-            _showImg.empty();
-            _gaoyiCarousel.empty();
-            $('#imgTotle').text(window.ImgList.length);
-            $.each(window.ImgList, function (key, val) {
-                //作品集
-                if (key < 6) {
-                    if (key % 3 == 0) {
-                        _showImg.append($('<div/>').addClass('imgLine'));
-                    }
-                    const _img = $('<img/>').attr({ "src": val.ImgPath, "alt": val.ImgType, "data-id": val.ImgType, "data-name": val.ImgName, "onclick": "imgClick(this);" });
-                    const _imgBorder = $('<div/>').addClass('imgBorder').append(_img);
-                    $(_showImg.children().last()).append(_imgBorder);
-                };
-
-                //作品相簿
-                const _imgCarousel = $('<img/>').addClass('imgBook d-block w-100').attr({ "src": val.ImgPath, "alt": val.ImgType, "data-id": val.ImgType, "data-name": val.ImgName });
-                const _imgItem = $('<div/>').addClass('imgItem carousel-item').attr({ "data-id": val.ImgType, "data-name": val.ImgName }).append(_imgCarousel);
-                if (key == 0) {
-                    _imgItem.addClass('active');
-                };
-                _gaoyiCarousel.append(_imgItem);
+        const resetImgList = function () {
+            $.each(window.ImgList, function (key, value) {
+                value.ImgID = value.ImgType + '_' + key;
             });
+        };
+
+        const getGaoyiAlbumList = function () {
+            //清除物件
+            const _gaoyiImgLists = $('#gaoyiImgLists');
+            _gaoyiImgLists.empty();
+            const _gaoyiCarousel = $('#gaoyiCarousel');
+            _gaoyiCarousel.empty();
+
+            //計算真正有效的相片數量
+            var _imgQty = 0;
+
+            //過濾出有效的相簿清單
+            const _album = ImgType.filter(x => ImgList.filter(y => x.ID == y.ImgType).length > 0);
+
+            $.each(_album, function (aKey, aVal) {
+                const _dAlbum = $('<div/>').addClass(['my-3']).attr({
+                    'id': aVal.ID,
+                    'data-aos': 'zoom-in',
+                    'data-aos-duration': '2000',
+                });
+                const _dAlbumTitle = $('<h4/>').text(aVal.Name).addClass(['my-2']);
+                const _dAlbumContent = $('<div/>').addClass(['']);
+                _dAlbum.append(_dAlbumTitle).append(_dAlbumContent);
+                _gaoyiImgLists.append(_dAlbum);
+
+                //過濾出有效的圖片清單
+                const _imgs = ImgList.filter(x => x.ImgType == aVal.ID);
+                $.each(_imgs, function (iKey, iVal) {
+                    //產生相片
+                    const _img = $('<img/>').attr({ 'src': iVal.ImgPath, 'alt': iVal.ImgName });
+                    _img.addClass(['', '', '', '']);
+                    const _dImg = $('<div/>').addClass(['gaoyiImg']).append(_img);
+                    _dImg.attr({
+                        'data-aos': 'zoom-in',
+                        'data-aos-duration': '2000',
+                        'data-id': iVal.ImgID,
+                        'onclick': 'imgClick(this);'
+                    });
+                    _dAlbumContent.append(_dImg);
+
+                    //產生 model 裡的相片
+                    const _imgCarousel = $('<img/>').addClass('d-block w-100').attr({ "src": iVal.ImgPath, "alt": iVal.ImgName, "data-id": iVal.ImgID });
+                    const _imgItem = $('<div/>').addClass('carousel-item').attr({ "data-id": iVal.ImgID }).append(_imgCarousel);
+                    if (iKey == 0) {
+                        _imgItem.addClass('active');
+                    };
+                    _gaoyiCarousel.append(_imgItem);
+                    _imgQty++;
+                });
+            });
+
+            $('#imgTotle').text(_imgQty);
         };
 
         const imgClick = function (value) {
             const _imgID = $(value).attr('data-id');
-            const _imgName = $(value).attr('data-name');
-            const _imgInfo = window.ImgList.find(x => x.ImgType == _imgID && x.ImgName == _imgName);
-            const _imgTypeInfo = window.ImgType.find(x => x.ID == _imgID);
-            $('#imgNo').text(window.ImgList.findIndex(x => x.ImgName == _imgName) + 1);
-            $('#albumTitle').text(_imgTypeInfo.Name + " - " + _imgInfo.ImgName);
-            $('.imgItem.carousel-item').removeClass('active');
-            $('.imgItem[data-id="' + _imgID + '"][data-name="' + _imgName + '"]').addClass('active');
+            const _imgInfo = window.ImgList.find(x => x.ImgID == _imgID);
+            $('#imgNo').text(window.ImgList.findIndex(x => x.ImgID == _imgID) + 1);
+            $('#albumTitle').text(_imgInfo.ImgName);
+            $('#carousel .carousel-item').removeClass('active');
+            $('#carousel .carousel-item[data-id="' + _imgID + '"]').addClass('active');
             $('#imgModal').modal('show');
         };
 
         const controlClick = function (value) {
             const _imgID = $(value).attr('data-id');
-            const _imgName = $(value).attr('data-name');
-            const _imgInfo = window.ImgList.find(x => x.ImgType == _imgID && x.ImgName == _imgName);
-            const _imgTypeInfo = window.ImgType.find(x => x.ID == _imgID);
-            $('#imgNo').text(window.ImgList.findIndex(x => x.ImgName == _imgName) + 1);
-            $('#albumTitle').text(_imgTypeInfo.Name + " - " + _imgInfo.ImgName);
+            const _imgInfo = window.ImgList.find(x => x.ImgID == _imgID);
+            $('#imgNo').text(window.ImgList.findIndex(x => x.ImgID == _imgID) + 1);
+            $('#albumTitle').text(_imgInfo.ImgName);
         };
     </script>
 </head>
 <body>
-    <header id="header" class="bg-body-tertiary">
-        <div id="headerTitle">
+    <header>
+        <div id="gaoyiHeader">
+            <div class="py-2" id="gaoyiTop">
+                <div class="container text-center">
+                    <a id="gaoyiTitle" class="navbar-brand text-white" href="#">Gao Yi</a>
+                </div>
+            </div>
             <div class="container">
-                <nav class="navbar navbar-expand-lg">
-                    <div class="container-fluid">
-                        <a class="navbar-brand m-0" href="index.html"><h2 class="m-0">高藝建材工程有限公司</h2></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                            <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">高藝建材工程有限公司</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#gaoyiDescription">關於我們</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#gaoyiImgs">作品集</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#gaoyiInfo">聯絡資訊</a>
-                                    </li>
-                                </ul>
-                            </div>
+                <div class="my-md-4 my-2">
+                    <h1 class="text-center my-1 text-nowrap" style="letter-spacing:4px;"><strong data-gaoyi="建材工程有限公司"><span data-gaoyi="高藝">高藝</span>建材工程有限公司</strong></h1>
+                    <p class="text-center m-0">
+                        <span data-gaoyi="RY SPC 卡扣式地板">服務地區：桃園、北北基、宜蘭、花蓮</span>
+                    </p>
+                </div>
+                <div>
+                    <div class="py-2 text-center text-nowrap">
+                        <div class="d-inline gaoyiIcon"
+                             data-aos="zoom-in"
+                             data-aos-duration="3000"
+                             data-aos-delay="0">
+                            <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=991xxroi" target="_blank" title="@991xxroi">
+                                <i class="bi bi-line"></i>
+                                <span>官方Line</span>
+                            </a>
+                        </div>
+                        <div class="d-inline gaoyiIcon"
+                             data-aos="zoom-in"
+                             data-aos-duration="3000"
+                             data-aos-delay="1000">
+                            <a href="https://goo.gl/maps/uUcy3kXPC86FjjCA9" target="_blank" title="宜蘭縣蘇澳鎮德興二路2號">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </a>
+                        </div>
+                        <div class="d-inline gaoyiIcon"
+                             data-aos="zoom-in"
+                             data-aos-duration="3000"
+                             data-aos-delay="1500">
+                            <a href="tel:+886-3-9902917" title="(03)990-2917">
+                                <i class="bi bi-telephone-inbound-fill"></i>
+                            </a>
+                        </div>
+                        <div class="d-inline gaoyiIcon"
+                             data-aos="zoom-in"
+                             data-aos-duration="3000"
+                             data-aos-delay="2000">
+                            <a href="mailto:gaoyi11182@gmail.com" title="gaoyi11182@gmail.com">
+                                <i class="bi bi-envelope-fill"></i>
+                            </a>
                         </div>
                     </div>
-                </nav>
+                </div>
             </div>
         </div>
+        <svg width="100%" height="100%" id="gaoyiSvg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient" x1="53%" y1="0%" x2="47%" y2="100%"><stop offset="5%" stop-color="#004831"></stop><stop offset="95%" stop-color="#004831"></stop></linearGradient></defs><path d="M 0,400 C 0,400 0,200 0,200 C 72.52559257986945,166.09412572998968 145.0511851597389,132.1882514599794 208,136 C 270.9488148402611,139.8117485400206 324.32085194091377,181.34111989007215 385,182 C 445.67914805908623,182.65888010992785 513.665407076606,142.44726897973206 596,137 C 678.334592923394,131.55273102026794 775.0175197526623,160.86980419099967 859,165 C 942.9824802473377,169.13019580900033 1014.2645139127446,148.07351425626933 1066,150 C 1117.7354860872554,151.92648574373067 1149.9244245963587,176.83613878392305 1209,189 C 1268.0755754036413,201.16386121607695 1354.0377877018207,200.58193060803848 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 200)"></path></svg>
     </header>
     <content>
-        <div class="container p-3">
-            <div id="gaoyiDescription">
-                <h3 class="text-center">RY SPC 卡扣地板</h3>
+        <div class="container">
+            <div id="gaoyiCard" class="mb-5"
+                 data-aos="zoom-in"
+                 data-aos-duration="2000"
+                 data-aos-delay="0"
+                 data-aos-anchor-placement="top-bottom">
+                <h3 class="text-center fw-bold my-3">三大保證</h3>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                        <div class="card h-100">
+                    <div class="col"
+                         data-aos="zoom-in"
+                         data-aos-duration="2000"
+                         data-aos-delay="500"
+                         data-aos-anchor-placement="top-bottom">
+                        <div class="card h-100 shadow">
                             <div class="text-center pt-3">
                                 <img src="../Libs/Images/icon/board.svg" class="card-img-top" alt="視覺 +">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title text-center">視覺 +</h5>
+                                <h5 class="card-title text-center fw-bold">視覺 +</h5>
                                 <div class="card-text">
                                     <ul class="m-0">
                                         <li>依照木紋紋理同步壓紋</li>
@@ -207,13 +367,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card h-100">
+                    <div class="col"
+                         data-aos="zoom-in"
+                         data-aos-duration="2000"
+                         data-aos-delay="500"
+                         data-aos-anchor-placement="top-bottom">
+                        <div class="card h-100 shadow">
                             <div class="text-center pt-3">
                                 <img src="../Libs/Images/icon/certificate.svg" class="card-img-top" alt="SGS 驗證 +">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title text-center">SGS 驗證 +</h5>
+                                <h5 class="card-title text-center fw-bold">SGS 驗證 +</h5>
                                 <div class="card-text">
                                     <ul class="m-0">
                                         <li>防潮、防焰、防蟲、防震</li>
@@ -223,17 +387,21 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card h-100">
+                    <div class="col"
+                         data-aos="zoom-in"
+                         data-aos-duration="2000"
+                         data-aos-delay="500"
+                         data-aos-anchor-placement="top-bottom">
+                        <div class="card h-100 shadow">
                             <div class="text-center pt-3">
                                 <img src="../Libs/Images/icon/quality.svg" class="card-img-top" alt="耐磨 +">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title text-center">耐磨 +</h5>
+                                <h5 class="card-title text-center fw-bold">耐磨 +</h5>
                                 <div class="card-text">
                                     <ul class="m-0">
                                         <li>石塑層 5mm + 耐磨層 0.7mm</li>
-                                        <li>耐磨係數100,000轉<span style="white-space: nowrap; ">( 達歐盟商業用 AC4 等級 )</span></li>
+                                        <li>耐磨係數100,000轉<span> ( 達歐盟商業用 AC4 等級 )</span></li>
                                     </ul>
                                 </div>
                             </div>
@@ -241,77 +409,23 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="p-3 text-bg-dark">
-            <div id="gaoyiImgs" class="container">
-                <h3 class="text-center">作品集</h3>
-                <div id="showImg">
-                </div>
-                <div class="text-center mt-2">
-                    <a target="_self" href="album.html" class="btn btn-sm btn-secondary">檢視更多</a>
-                </div>
-            </div>
-        </div>
-        <div class="p-3">
-            <div id="gaoyiInfo" class="container">
-                <h3 class="text-center">聯絡資訊</h3>
-                <div class="text-center">
-                    <div class="d-inline-block fw-semibold">
-                        <div class="row">
-                            <div class="col-12 col-md-6">
-                                <div class="text-start pt-2 pb-2 text-nowrap">
-                                    <div class="d-inline me-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-                                        </svg>
-                                    </div>
-                                    <div class="d-inline">
-                                        <a href="https://goo.gl/maps/uUcy3kXPC86FjjCA9" target="_blank">宜蘭縣蘇澳鎮德興二路2號</a>
-                                    </div>
-                                </div>
-                                <div class="text-start pt-2 pb-2 text-nowrap">
-                                    <div class="d-inline me-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0z" />
-                                        </svg>
-                                    </div>
-                                    <div class="d-inline ">
-                                        <a href="tel:+886-3-9902917">(03)990-2917</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="text-start pt-2 pb-2 text-nowrap">
-                                    <div class="d-inline me-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
-                                        </svg>
-                                    </div>
-                                    <div class="d-inline ">
-                                        <a href="mailto:gaoyi11182@gmail.com">gaoyi11182@gmail.com</a>
-                                    </div>
-                                </div>
-                                <div class="text-start pt-2 pb-2 text-nowrap">
-                                    <div class="d-inline me-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                                            <path d="M8 0c4.411 0 8 2.912 8 6.492 0 1.433-.555 2.723-1.715 3.994-1.678 1.932-5.431 4.285-6.285 4.645-.83.35-.734-.197-.696-.413l.003-.018.114-.685c.027-.204.055-.521-.026-.723-.09-.223-.444-.339-.704-.395C2.846 12.39 0 9.701 0 6.492 0 2.912 3.59 0 8 0ZM5.022 7.686H3.497V4.918a.156.156 0 0 0-.155-.156H2.78a.156.156 0 0 0-.156.156v3.486c0 .041.017.08.044.107v.001l.002.002.002.002a.154.154 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157Zm.791-2.924a.156.156 0 0 0-.156.156v3.486c0 .086.07.155.156.155h.562c.086 0 .155-.07.155-.155V4.918a.156.156 0 0 0-.155-.156h-.562Zm3.863 0a.156.156 0 0 0-.156.156v2.07L7.923 4.832a.17.17 0 0 0-.013-.015v-.001a.139.139 0 0 0-.01-.01l-.003-.003a.092.092 0 0 0-.011-.009h-.001L7.88 4.79l-.003-.002a.029.029 0 0 0-.005-.003l-.008-.005h-.002l-.003-.002-.01-.004-.004-.002a.093.093 0 0 0-.01-.003h-.002l-.003-.001-.009-.002h-.006l-.003-.001h-.004l-.002-.001h-.574a.156.156 0 0 0-.156.155v3.486c0 .086.07.155.156.155h.56c.087 0 .157-.07.157-.155v-2.07l1.6 2.16a.154.154 0 0 0 .039.038l.001.001.01.006.004.002a.066.066 0 0 0 .008.004l.007.003.005.002a.168.168 0 0 0 .01.003h.003a.155.155 0 0 0 .04.006h.56c.087 0 .157-.07.157-.155V4.918a.156.156 0 0 0-.156-.156h-.561Zm3.815.717v-.56a.156.156 0 0 0-.155-.157h-2.242a.155.155 0 0 0-.108.044h-.001l-.001.002-.002.003a.155.155 0 0 0-.044.107v3.486c0 .041.017.08.044.107l.002.003.002.002a.155.155 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156Z" />
-                                        </svg>
-                                    </div>
-                                    <div class="d-inline ">
-                                        <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=991xxroi" target="_blank"><span>@991xxroi</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div id="gaoyiAlbum" class="mb-5"
+                 data-aos="zoom-in"
+                 data-aos-duration="2000"
+                 data-aos-delay="0"
+                 data-aos-anchor-placement="top-bottom">
+                <h3 class="text-center fw-bold my-3">作品集</h3>
+                <div id="gaoyiImgLists">
                 </div>
             </div>
         </div>
     </content>
-    <footer class="border-top footer text-muted p-2">
-        <div class="container" style="font-size:13px;">
-            <div class="text-center">未經高藝建材工程有限公司授權同意，不得將網站內容轉載於任何形式媒體</div>
-            <div class="text-center">Copyright &copy; 高藝建材工程有限公司</div>
+    <footer class="border-top footer p-2">
+        <div class="container" style="font-size:0.5rem;">
+            <div class="text-center">Copyright &copy; Gao Yi BUILDING MATERIAL ENGINEERING CO., LTD 2023. All Rights Reserved.</div>
+            <div class="text-center">
+                <span>未經高藝建材工程有限公司授權同意，不得將網站內容轉載於任何形式媒體</span>
+            </div>
         </div>
     </footer>
     <div class="modal fade" id="imgModal" tabindex="-1" aria-labelledby="imgModalLabelLabel" aria-hidden="true">
@@ -327,9 +441,7 @@
                         <span id="albumTitle"></span>
                     </h6>
                     <button type="button" class="btn btn-sm text-white" data-bs-dismiss="modal" aria-label="Close">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
-                        </svg>
+                        <i class="bi bi-x-lg"></i>
                     </button>
                 </div>
                 <div class="modal-body">
