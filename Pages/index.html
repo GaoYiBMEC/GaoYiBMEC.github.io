@@ -226,9 +226,7 @@
 
             $.each(_album, function (aKey, aVal) {
                 const _dAlbum = $('<div/>').addClass(['my-3']).attr({
-                    'id': aVal.ID,
-                    'data-aos': 'zoom-in',
-                    'data-aos-duration': '2000',
+                    'id': aVal.ID
                 });
                 const _dAlbumTitle = $('<h4/>').text(aVal.Name).addClass(['my-2']);
                 const _dAlbumContent = $('<div/>').addClass(['']);
@@ -243,8 +241,6 @@
                     _img.addClass(['', '', '', '']);
                     const _dImg = $('<div/>').addClass(['gaoyiImg']).append(_img);
                     _dImg.attr({
-                        'data-aos': 'zoom-in',
-                        'data-aos-duration': '2000',
                         'data-id': iVal.ImgID,
                         'onclick': 'imgClick(this);'
                     });
@@ -347,12 +343,7 @@
                  data-aos-anchor-placement="top-bottom">
                 <h3 class="text-center fw-bold my-3">三大保證</h3>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col"
-                         data-aos="zoom-in"
-                         data-aos-duration="2000"
-                         data-aos-delay="500"
-                         data-aos-anchor-placement="top-bottom">
-                        <div class="card h-100 shadow">
+                    <div class="col">
                             <div class="text-center pt-3">
                                 <img src="../Libs/Images/icon/board.svg" class="card-img-top" alt="視覺 +">
                             </div>
@@ -367,11 +358,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col"
-                         data-aos="zoom-in"
-                         data-aos-duration="2000"
-                         data-aos-delay="500"
-                         data-aos-anchor-placement="top-bottom">
+                    <div class="col">
                         <div class="card h-100 shadow">
                             <div class="text-center pt-3">
                                 <img src="../Libs/Images/icon/certificate.svg" class="card-img-top" alt="SGS 驗證 +">
@@ -387,11 +374,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col"
-                         data-aos="zoom-in"
-                         data-aos-duration="2000"
-                         data-aos-delay="500"
-                         data-aos-anchor-placement="top-bottom">
+                    <div class="col">
                         <div class="card h-100 shadow">
                             <div class="text-center pt-3">
                                 <img src="../Libs/Images/icon/quality.svg" class="card-img-top" alt="耐磨 +">
