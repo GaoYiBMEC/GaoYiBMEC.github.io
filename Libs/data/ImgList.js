@@ -58,7 +58,6 @@ window.ImgList = [ { "ImgType" : "RY8101", "ImgPath" : "../Libs/Images/RY/RY8101
 , { "ImgType" : "RY8103", "ImgPath" : "../Libs/Images/RY/RY8103/RY8103 (1).jpg", "ImgName" : "RY8103 (1)" } 
 , { "ImgType" : "RY8103", "ImgPath" : "../Libs/Images/RY/RY8103/RY8103 (2).jpg", "ImgName" : "RY8103 (2)" } 
 , { "ImgType" : "RY8104", "ImgPath" : "../Libs/Images/RY/RY8104/RY8104 (1).jpg", "ImgName" : "RY8104 (1)" } 
-, { "ImgType" : "RY8104", "ImgPath" : "../Libs/Images/RY/RY8104/RY8104 (2).jpg", "ImgName" : "RY8104 (2)" } 
 , { "ImgType" : "RY8104", "ImgPath" : "../Libs/Images/RY/RY8104/RY8104 (3).jpg", "ImgName" : "RY8104 (3)" } 
 , { "ImgType" : "RY8104", "ImgPath" : "../Libs/Images/RY/RY8104/RY8104 (4).jpg", "ImgName" : "RY8104 (4)" } 
 , { "ImgType" : "RY8104", "ImgPath" : "../Libs/Images/RY/RY8104/RY8104 (5).jpg", "ImgName" : "RY8104 (5)" } 
