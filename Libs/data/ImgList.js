@@ -74,7 +74,6 @@ window.ImgList = [ { "ImgType" : "RY8101", "ImgPath" : "../Libs/Images/RY/RY8101
 , { "ImgType" : "RY8104", "ImgPath" : "../Libs/Images/RY/RY8104/RY8104 (16).jpg", "ImgName" : "RY8104 (16)" } 
 , { "ImgType" : "RY8104", "ImgPath" : "../Libs/Images/RY/RY8104/RY8104 (17).jpg", "ImgName" : "RY8104 (17)" } 
 , { "ImgType" : "RY8104", "ImgPath" : "../Libs/Images/RY/RY8104/RY8104 (18).jpg", "ImgName" : "RY8104 (18)" } 
-, { "ImgType" : "RY8104", "ImgPath" : "../Libs/Images/RY/RY8104/RY8104 (19).jpg", "ImgName" : "RY8104 (19)" } 
 , { "ImgType" : "RY8106", "ImgPath" : "../Libs/Images/RY/RY8106/RY8106 (1).jpg", "ImgName" : "RY8106 (1)" } 
 , { "ImgType" : "RY8106", "ImgPath" : "../Libs/Images/RY/RY8106/RY8106 (2).jpg", "ImgName" : "RY8106 (2)" } 
 , { "ImgType" : "RY8106", "ImgPath" : "../Libs/Images/RY/RY8106/RY8106 (3).jpg", "ImgName" : "RY8106 (3)" } 
@@ -115,7 +114,6 @@ window.ImgList = [ { "ImgType" : "RY8101", "ImgPath" : "../Libs/Images/RY/RY8101
 , { "ImgType" : "RY8107", "ImgPath" : "../Libs/Images/RY/RY8107/RY8107 (17).jpg", "ImgName" : "RY8107 (17)" } 
 , { "ImgType" : "RY8107", "ImgPath" : "../Libs/Images/RY/RY8107/RY8107 (18).jpg", "ImgName" : "RY8107 (18)" } 
 , { "ImgType" : "RY8108", "ImgPath" : "../Libs/Images/RY/RY8108/RY8108 (1).jpg", "ImgName" : "RY8108 (1)" } 
-, { "ImgType" : "RY8108", "ImgPath" : "../Libs/Images/RY/RY8108/RY8108 (2).jpg", "ImgName" : "RY8108 (2)" } 
 , { "ImgType" : "RY8108", "ImgPath" : "../Libs/Images/RY/RY8108/RY8108 (3).jpg", "ImgName" : "RY8108 (3)" } 
 , { "ImgType" : "RY8108", "ImgPath" : "../Libs/Images/RY/RY8108/RY8108 (4).jpg", "ImgName" : "RY8108 (4)" }  ] ; 
 
